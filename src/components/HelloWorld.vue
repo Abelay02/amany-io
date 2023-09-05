@@ -1,5 +1,8 @@
 <template>
   <div class="hello">
+    <a href="https://vuejs.org">
+      <img alt="Vue logo" src="../assets/logo.png">
+    </a>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -54,5 +57,9 @@ li {
 }
 a {
   color: #42b983;
+}
+img {
+  width: 10px;
+  height: auto;
 }
 </style>
