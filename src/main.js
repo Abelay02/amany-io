@@ -1,33 +1,32 @@
-import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
-import App from './App.vue'
+import { createApp } from "vue";
+import { createRouter, createWebHistory } from "vue-router";
+import App from "./App.vue";
 
 // Import your Vue components that you want to use as routes
-import HomePage from './components/HomePage.vue';
-import BlogSection from './components/Blog.vue';
-import AboutSection from './components/About.vue';
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from "./components/HomePage.vue";
+import BlogSection from "./components/Blog.vue";
+import AboutSection from "./components/About.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 // import Contact from './components/Contact.vue';
 
-const app = createApp(App)
+const app = createApp(App);
 
 // Define your routes
 const routes = [
-    {path: '/', component: HomePage},
-    { path: '/helloworld', component: HelloWorld },
-    { path: '/blog', component: BlogSection },
-    { path: '/about', component: AboutSection },
-    // { path: '/contact', component: Contact },
-  ];
-  
+  { path: "/", component: HomePage },
+  { path: "/helloworld", component: HelloWorld },
+  { path: "/blog", component: BlogSection },
+  { path: "/about", component: AboutSection },
+  // { path: '/contact', component: Contact },
+];
 
 // Create a VueRouter instance
 const router = createRouter({
-    history: createWebHistory(),
-    routes: routes,
-    mode: 'history', // This enables "history" mode for cleaner URLs
-  });
+  history: createWebHistory(),
+  routes: routes,
+  mode: "history", // This enables "history" mode for cleaner URLs
+});
 
-app.use(router)
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");

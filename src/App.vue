@@ -4,10 +4,9 @@
 
 <script>
 export default {
-  name: 'App',
-  components: {
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
@@ -20,7 +19,8 @@ export default {
   /* margin-top: 60px; */
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -31,6 +31,6 @@ img {
 }
 
 a {
-    color: #000;
-  }
+  color: #000;
+}
 </style>

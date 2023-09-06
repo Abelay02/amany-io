@@ -1,5 +1,5 @@
 <template>
-      <div class="blog-list">
+  <div class="blog-list">
     <!-- Back Button -->
     <router-link to="/" class="back-button">←Back</router-link>
 
@@ -11,75 +11,138 @@
       </li>
     </ul>
 
-     <!-- Pagination Controls -->
+    <!-- Pagination Controls -->
     <div class="pagination">
-      <button @click="previousPage" :hidden="posts.length <= postsPerPage" :disabled="currentPage === 1">Prev</button>
+      <button
+        @click="previousPage"
+        :hidden="posts.length <= postsPerPage"
+        :disabled="currentPage === 1"
+      >
+        Prev
+      </button>
       <span v-for="page in totalPages" :key="page">
-        <button @click="goToPage(page)" :class="{ active: currentPage === page }">{{ page }}</button>
+        <button
+          @click="goToPage(page)"
+          :class="{ active: currentPage === page }"
+        >
+          {{ page }}
+        </button>
       </span>
-      <button @click="nextPage" :hidden="posts.length <= postsPerPage" :disabled="currentPage === totalPages">Next</button>
+      <button
+        @click="nextPage"
+        :hidden="posts.length <= postsPerPage"
+        :disabled="currentPage === totalPages"
+      >
+        Next
+      </button>
     </div>
-
   </div>
+</template>
 
-  </template>
-  
-  <script>
-  export default {
-    name: 'BlogSection',
-    data() {
-        return {
-            posts: [
-                { id: 1, title: 'Blog Post 1', content: 'This is the content of Blog Post 1.' },
-                { id: 2, title: 'Blog Post 2', content: 'This is the content of Blog Post 2.' },
-                { id: 3, title: 'Blog Post 3', content: 'This is the content of Blog Post 3.' },
-                { id: 4, title: 'Blog Post 1', content: 'This is the content of Blog Post 1.' },
-                { id: 5, title: 'Blog Post 2', content: 'This is the content of Blog Post 2.' },
-                { id: 6, title: 'Blog Post 3', content: 'This is the content of Blog Post 3.' },
-                { id: 7, title: 'Blog Post 1', content: 'This is the content of Blog Post 1.' },
-                { id: 8, title: 'Blog Post 2', content: 'This is the content of Blog Post 2.' },
-                { id: 9, title: 'Blog Post 3', content: 'This is the content of Blog Post 3.' },
-                { id: 10, title: 'Blog Post 1', content: 'This is the content of Blog Post 1.' },
-                { id: 11, title: 'Blog Post 2', content: 'This is the content of Blog Post 2.' },
-                { id: 12, title: 'Blog Post 3', content: 'This is the content of Blog Post 3.' },
-            ],
-            postsPerPage: 10,
-            currentPage: 1,
-        };
-    },
-    computed: {
-        displayedPosts() {
-            const startIndex = (this.currentPage - 1) * this.postsPerPage;
-            const endIndex = startIndex + this.postsPerPage;
-            return this.posts.slice(startIndex, endIndex);
+<script>
+export default {
+  name: "BlogSection",
+  data() {
+    return {
+      posts: [
+        {
+          id: 1,
+          title: "Blog Post 1",
+          content: "This is the content of Blog Post 1.",
         },
-        totalPages() {
-            return Math.ceil(this.posts.length / this.postsPerPage);
+        {
+          id: 2,
+          title: "Blog Post 2",
+          content: "This is the content of Blog Post 2.",
         },
-    },
-    methods: {
-        previousPage() {
-            if (this.currentPage > 1) {
-                this.currentPage--;
-            }
+        {
+          id: 3,
+          title: "Blog Post 3",
+          content: "This is the content of Blog Post 3.",
         },
-        nextPage() {
-            if (this.currentPage < this.totalPages) {
-                this.currentPage++;
-            }
+        {
+          id: 4,
+          title: "Blog Post 1",
+          content: "This is the content of Blog Post 1.",
         },
-        goToPage(page) {
-            if (page >= 1 && page <= this.totalPages) {
-                this.currentPage = page;
-            }
+        {
+          id: 5,
+          title: "Blog Post 2",
+          content: "This is the content of Blog Post 2.",
+        },
+        {
+          id: 6,
+          title: "Blog Post 3",
+          content: "This is the content of Blog Post 3.",
+        },
+        {
+          id: 7,
+          title: "Blog Post 1",
+          content: "This is the content of Blog Post 1.",
+        },
+        {
+          id: 8,
+          title: "Blog Post 2",
+          content: "This is the content of Blog Post 2.",
+        },
+        {
+          id: 9,
+          title: "Blog Post 3",
+          content: "This is the content of Blog Post 3.",
+        },
+        {
+          id: 10,
+          title: "Blog Post 1",
+          content: "This is the content of Blog Post 1.",
+        },
+        {
+          id: 11,
+          title: "Blog Post 2",
+          content: "This is the content of Blog Post 2.",
+        },
+        {
+          id: 12,
+          title: "Blog Post 3",
+          content: "This is the content of Blog Post 3.",
+        },
+      ],
+      postsPerPage: 10,
+      currentPage: 1,
+    };
+  },
+  computed: {
+    displayedPosts() {
+      const startIndex = (this.currentPage - 1) * this.postsPerPage;
+      const endIndex = startIndex + this.postsPerPage;
+      return this.posts.slice(startIndex, endIndex);
     },
+    totalPages() {
+      return Math.ceil(this.posts.length / this.postsPerPage);
     },
-  };
-  </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-  /* Center the component horizontally */
+  },
+  methods: {
+    previousPage() {
+      if (this.currentPage > 1) {
+        this.currentPage--;
+      }
+    },
+    nextPage() {
+      if (this.currentPage < this.totalPages) {
+        this.currentPage++;
+      }
+    },
+    goToPage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.currentPage = page;
+      }
+    },
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+/* Center the component horizontally */
 .blog-list {
   display: flex;
   flex-direction: column;
@@ -157,5 +220,4 @@
   color: #999;
   cursor: not-allowed;
 }
-  </style>
-  
+</style>
