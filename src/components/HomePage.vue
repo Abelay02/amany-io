@@ -6,7 +6,7 @@
     <div class="homepage">
       <!-- Main Content -->
       <div class="content">
-        <img alt="Vue logo" src="../assets/memoji_v2.png">
+        <img alt="Smiling Amany memoji" src="../assets/memoji_v2.png">
         <h1 class="name">Amany Belay</h1>
         
         <!-- Social Media Links -->
@@ -14,10 +14,10 @@
           <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/amany_belay" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Abelay02" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
           </a>
           <!-- Add more social media links here -->
@@ -35,7 +35,6 @@
   export default {
     name: 'HomePage',
     props: {
-      msg: String
     }
   }
   </script>
@@ -85,6 +84,10 @@
     font-size: 24px;
     color: #000;
     margin: 0 10px;
+  }
+
+  router-link {
+    color: #000;
   }
   
   /* Add more specific styles as needed */

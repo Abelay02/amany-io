@@ -1,25 +1,11 @@
 <template>
-  <!-- <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/helloworld">Helloworld</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/blog">Blog</router-link>
-  </nav> -->
   <router-view></router-view>
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-// // import BlogSection from './components/Blog.vue'
-// // import AboutSection from './components/About.vue'
-
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    // BlogSection,
-    // AboutSection
   }
 }
 </script>
@@ -43,4 +29,8 @@ img {
   width: 100px;
   height: auto;
 }
+
+a {
+    color: #000;
+  }
 </style>
