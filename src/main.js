@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage.vue";
 import BlogSection from "./components/Blog.vue";
 import AboutSection from "./components/About.vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import BlogPost from "./components/BlogPost.vue";
 // import Contact from './components/Contact.vue';
 
 const app = createApp(App);
@@ -17,6 +18,7 @@ const routes = [
   { path: "/helloworld", component: HelloWorld },
   { path: "/blog", component: BlogSection },
   { path: "/about", component: AboutSection },
+  { path: "/blog/:slug", name: "BlogPost", component: BlogPost },
   // { path: '/contact', component: Contact },
 ];
 

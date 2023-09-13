@@ -2,12 +2,12 @@
   <div class="blog-list">
     <!-- Back Button -->
     <router-link to="/" class="back-button">←Back</router-link>
-
     <!-- Blog Post Cards -->
     <ul class="post-list">
       <li v-for="post in displayedPosts" :key="post.id" class="post-card">
         <h2>{{ post.title }}</h2>
         <p>{{ post.content }}</p>
+        <router-link :to="`/blog/${post.slug}`">Read More</router-link>
       </li>
     </ul>
 
@@ -40,75 +40,27 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "BlogSection",
   data() {
     return {
-      posts: [
-        {
-          id: 1,
-          title: "Blog Post 1",
-          content: "This is the content of Blog Post 1.",
-        },
-        {
-          id: 2,
-          title: "Blog Post 2",
-          content: "This is the content of Blog Post 2.",
-        },
-        {
-          id: 3,
-          title: "Blog Post 3",
-          content: "This is the content of Blog Post 3.",
-        },
-        {
-          id: 4,
-          title: "Blog Post 1",
-          content: "This is the content of Blog Post 1.",
-        },
-        {
-          id: 5,
-          title: "Blog Post 2",
-          content: "This is the content of Blog Post 2.",
-        },
-        {
-          id: 6,
-          title: "Blog Post 3",
-          content: "This is the content of Blog Post 3.",
-        },
-        {
-          id: 7,
-          title: "Blog Post 1",
-          content: "This is the content of Blog Post 1.",
-        },
-        {
-          id: 8,
-          title: "Blog Post 2",
-          content: "This is the content of Blog Post 2.",
-        },
-        {
-          id: 9,
-          title: "Blog Post 3",
-          content: "This is the content of Blog Post 3.",
-        },
-        {
-          id: 10,
-          title: "Blog Post 1",
-          content: "This is the content of Blog Post 1.",
-        },
-        {
-          id: 11,
-          title: "Blog Post 2",
-          content: "This is the content of Blog Post 2.",
-        },
-        {
-          id: 12,
-          title: "Blog Post 3",
-          content: "This is the content of Blog Post 3.",
-        },
-      ],
+      posts: [],
       postsPerPage: 10,
       currentPage: 1,
+      currentlyDisplayed: false,
+      postTitle: null,
+      postContent: null,
     };
+  },
+  async created() {
+    try {
+      const resp = await axios.get("http://localhost:3000/posts");
+      this.posts = resp.data;
+    } catch (error) {
+      console.log(error);
+    }
   },
   computed: {
     displayedPosts() {
