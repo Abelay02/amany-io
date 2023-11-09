@@ -39,7 +39,7 @@
 
       <p>
         Hi, I'm Amany! Check out my
-        <router-link to="/helloworld">projects</router-link> or
+        <router-link to="/projects">projects</router-link> or
         <router-link to="/blog">blog</router-link>
       </p>
     </div>
@@ -101,6 +101,11 @@ export default {
 
 router-link {
   color: #000;
+}
+
+img {
+  width: 100px;
+  height: auto;
 }
 
 /* Add more specific styles as needed */

@@ -25,11 +25,6 @@ html {
   padding: 0;
 }
 
-img {
-  width: 100px;
-  height: auto;
-}
-
 a {
   color: #000;
 }
