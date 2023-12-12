@@ -56,7 +56,7 @@ export default {
   },
   async created() {
     try {
-      const resp = await axios.get("http://192.168.86.23:3000/posts");
+      const resp = await axios.get("https://my-json-server.typicode.com/Abelay02/amany-io/posts");
       this.posts = resp.data;
     } catch (error) {
       console.log(error);

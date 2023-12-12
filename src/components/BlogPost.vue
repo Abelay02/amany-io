@@ -21,7 +21,7 @@ export default {
     const slug = this.$route.params.slug;
     try {
       const resp = await axios.get(
-        `http://192.168.86.23:3000/posts?slug=${slug}`
+        `https://my-json-server.typicode.com/Abelay02/amany-io/posts?slug=${slug}`
       );
       this.post = resp.data[0];
     } catch (error) {
