@@ -56,7 +56,7 @@ export default {
   },
   async created() {
     try {
-      const resp = await axios.get("http://192.168.86.25:3000/posts");
+      const resp = await axios.get("http://192.168.86.23:3000/posts");
       this.posts = resp.data;
     } catch (error) {
       console.log(error);
@@ -171,5 +171,20 @@ export default {
 .pagination button:disabled {
   color: #999;
   cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .blog-list {
+    width: 100%;
+  }
+  .post-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 0;
+    width: 600px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-align: left;
+  }
 }
 </style>

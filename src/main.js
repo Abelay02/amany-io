@@ -9,6 +9,7 @@ import AboutSection from "./components/About.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import BlogPost from "./components/BlogPost.vue";
 import ProjectsList from "./components/ProjectsList.vue";
+import BlogSectionDupe from "./components/BlogDupe.vue";
 // import Contact from './components/Contact.vue';
 
 const app = createApp(App);
@@ -21,6 +22,7 @@ const routes = [
   { path: "/about", component: AboutSection },
   { path: "/blog/:slug", name: "BlogPost", component: BlogPost },
   { path: "/projects", component: ProjectsList },
+  { path: "/blogdupe", component: BlogSectionDupe },
   // { path: '/contact', component: Contact },
 ];
 
