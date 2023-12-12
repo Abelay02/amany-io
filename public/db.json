@@ -1,0 +1,83 @@
+    {
+    "posts":[
+        {
+        "id": 1,
+        "title": "Getting Started with Vue.js",
+        "content": "Vue.js is a progressive JavaScript framework for building user interfaces...",
+        "slug": "getting-started-with-vuejs"
+        },
+        {
+        "id": 2,
+        "title": "The Basics of JavaScript Promises",
+        "content": "Promises are a fundamental part of modern JavaScript programming...",
+        "slug": "the-basics-of-javascript-promises"
+        },
+        {
+        "id": 3,
+        "title": "Introduction to CSS Flexbox",
+        "content": "Flexbox is a layout model in CSS that allows you to design complex layouts with ease...",
+        "slug": "introduction-to-css-flexbox"
+        },
+        {
+        "id": 4,
+        "title": "Working with REST APIs in Node.js",
+        "content": "Node.js is a popular runtime for building server-side applications, and working with REST APIs is a common task...",
+        "slug": "working-with-rest-apis-in-nodejs"
+        },
+        {
+        "id": 5,
+        "title": "Responsive Web Design Principles",
+        "content": "Responsive web design ensures that your web pages look and function well on all devices...",
+        "slug": "responsive-web-design-principles"
+        },
+        {
+        "id": 6,
+        "title": "Vue Router and Single-Page Applications",
+        "content": "Vue Router is a powerful routing library for creating single-page applications with Vue.js...",
+        "slug": "vue-router-and-single-page-applications"
+        },
+        {
+        "id": 7,
+        "title": "Understanding State Management in Vuex",
+        "content": "Vuex is a state management library for Vue.js that helps manage the application's state in a predictable way...",
+        "slug": "understanding-state-management-in-vuex"
+        },
+        {
+        "id": 8,
+        "title": "Building RESTful APIs with Express.js",
+        "content": "Express.js is a popular Node.js framework for building web applications, including RESTful APIs...",
+        "slug": "building-restful-apis-with-expressjs"
+        },
+        {
+        "id": 9,
+        "title": "CSS Grid Layout for Modern Web Design",
+        "content": "CSS Grid Layout is a powerful tool for creating two-dimensional grid-based layouts in CSS...",
+        "slug": "css-grid-layout-for-modern-web-design"
+        },
+        {
+        "id": 10,
+        "title": "Introduction to ES6 and JavaScript Modules",
+        "content": "ES6 (ECMAScript 2015) introduced many new features to JavaScript, including modules for organizing code...",
+        "slug": "introduction-to-es6-and-javascript-modules"
+        },
+        {
+        "id": 11,
+        "title": "Frontend Development Tools for Productivity",
+        "content": "Frontend developers use a variety of tools and libraries to improve productivity and streamline development...",
+        "slug": "frontend-development-tools-for-productivity"
+        },
+        {
+        "id": 12,
+        "title": "Building a Simple Blog with Vue.js and Node.js",
+        "content": "In this tutorial, we'll create a simple blog application using Vue.js for the frontend and Node.js for the backend...",
+        "slug": "building-a-simple-blog-with-vuejs-and-nodejs"
+        },
+        {
+        "id": 13,
+        "title": "Building a Simple Blog with Vue.js and Node.js 2",
+        "content": "In this tutorial, we'll create a simple blog application using Vue.js for the frontend and Node.js for the backend...",
+        "slug": "building-a-simple-blog-with-vuejs-and-nodejs-2"
+        }
+    ]
+}
+    
