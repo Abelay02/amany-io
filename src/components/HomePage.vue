@@ -45,6 +45,7 @@
       </p>
     </div>
   </div>
+  <div class="footer">(Like me, this site is a W.I.P. Made with ❤️‍🔥)</div>
 </template>
 
 <script>
@@ -107,6 +108,18 @@ router-link {
 img {
   width: 100px;
   height: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+  font-size: smaller;
 }
 
 /* Add more specific styles as needed */
