@@ -40,8 +40,7 @@
       <p>
         Hi, I'm Amany! Check out my
         <router-link to="/projects">projects</router-link> or
-        <router-link to="/blog">blog</router-link> or
-        <router-link to="/blogdupe">blogdupe</router-link>
+        <router-link to="/blog">blog</router-link>
       </p>
     </div>
   </div>

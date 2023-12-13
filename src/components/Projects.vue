@@ -56,7 +56,7 @@
 // import axios from "axios";
 
 export default {
-  name: "BlogSectionDupe",
+  name: "ProjectsSection",
   data() {
     return {
       //   posts: [],
@@ -106,14 +106,6 @@ export default {
       ],
     };
   },
-  //   async created() {
-  //     try {
-  //       const resp = await axios.get("http://192.168.86.25:3000/posts");
-  //       this.posts = resp.data;
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   },
   computed: {
     displayedPosts() {
       const startIndex = (this.currentPage - 1) * this.postsPerPage;
