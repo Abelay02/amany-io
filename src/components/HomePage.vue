@@ -61,7 +61,6 @@ export default {
 .homepage {
   background-color: #fff;
   color: #000;
-  padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
   display: flex; /* Use flexbox for vertical centering */
