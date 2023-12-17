@@ -5,11 +5,13 @@
 
     <!-- Blog Post Cards (Grid Layout) -->
     <div class="post-list" style="width: 80%">
-      <div
+      <a
         v-for="post in displayedPosts"
         :key="post.id"
+        :href="post.github"
+        target="_blank"
         class="post-card"
-        style="width: 60%"
+        style="width: 60%; text-decoration: none; color: inherit"
       >
         <img :src="post.image" alt="Project Image" style="width: 100%" />
         <h2>
@@ -17,7 +19,7 @@
         </h2>
         <p>{{ post.description }}</p>
         <!-- <router-link :to="`/blog/${post.slug}`">Read More</router-link> -->
-      </div>
+      </a>
     </div>
 
     <!-- Pagination Controls -->
@@ -68,35 +70,36 @@ export default {
           title: "Crispresso2align",
           description: "Description of Project 1...",
           image: "/img/coffee-cup.png",
-          github: "https://github.com/yourusername/project1",
+          github: "https://github.com/kclem/bug-free-disco/tree/master/c",
         },
         {
           id: 2,
           title: "PyHangman",
           description: "Description of Project 2...",
           image: "/img/hangman-game.png",
-          github: "https://github.com/yourusername/project2",
+          github: "https://github.com/Abelay02/pyHangman",
         },
         {
           id: 3,
           title: "Sentimental Scraper",
           description: "Description of Project 3...",
           image: "/img/twitter.png",
-          github: "https://github.com/yourusername/project2",
+          github: "https://github.com/Abelay02/twitter",
         },
         {
           id: 4,
           title: "Link Away",
           description: "Description of Project 4...",
           image: "/img/unlink.png",
-          github: "https://github.com/yourusername/project2",
+          github: "https://github.com/Abelay02/link-away",
         },
         {
           id: 5,
           title: "Portfolio Website",
-          description: "Description of Project 5...",
+          description:
+            "This website! My first Vue.js app, click to see how I made it",
           image: "/img/web.png",
-          github: "https://github.com/yourusername/project2",
+          github: "https://github.com/Abelay02/amany-io",
         },
         // Add more project objects as needed
       ],
