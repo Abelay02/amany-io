@@ -14,7 +14,7 @@
       <!-- Social Media Links -->
       <div class="social-links">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/amanuel-belay/"
           target="_blank"
           rel="noopener noreferrer"
         >
