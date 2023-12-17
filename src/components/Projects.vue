@@ -11,11 +11,7 @@
         class="post-card"
         style="width: 60%"
       >
-        <img
-          src="../assets/twitter.png"
-          alt="Project Image"
-          style="width: 100%"
-        />
+        <img :src="post.image" alt="Project Image" style="width: 100%" />
         <h2>
           {{ post.title }}
         </h2>
@@ -71,35 +67,35 @@ export default {
           id: 1,
           title: "Crispresso2align",
           description: "Description of Project 1...",
-          image: "../assets/coffee-cup.png",
+          image: "/img/coffee-cup.png",
           github: "https://github.com/yourusername/project1",
         },
         {
           id: 2,
           title: "PyHangman",
           description: "Description of Project 2...",
-          image: "../assets/hangman-game.png",
+          image: "/img/hangman-game.png",
           github: "https://github.com/yourusername/project2",
         },
         {
           id: 3,
           title: "Sentimental Scraper",
           description: "Description of Project 3...",
-          image: "../assets/twitter.png",
+          image: "/img/twitter.png",
           github: "https://github.com/yourusername/project2",
         },
         {
           id: 4,
           title: "Link Away",
           description: "Description of Project 4...",
-          image: "../assets/unlink.png",
+          image: "/img/unlink.png",
           github: "https://github.com/yourusername/project2",
         },
         {
           id: 5,
           title: "Portfolio Website",
           description: "Description of Project 5...",
-          image: "../assets/web.png",
+          image: "/img/web.png",
           github: "https://github.com/yourusername/project2",
         },
         // Add more project objects as needed

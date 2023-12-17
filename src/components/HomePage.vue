@@ -8,7 +8,7 @@
   <div class="homepage">
     <!-- Main Content -->
     <div class="content">
-      <img alt="Smiling Amany memoji" src="../assets/memoji_v2.png" />
+      <img alt="Smiling Amany memoji" src="/img/memoji_v2.png" />
       <h1 class="name">Amany Belay</h1>
 
       <!-- Social Media Links -->
