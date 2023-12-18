@@ -5,9 +5,10 @@
     <!-- Blog Post Cards -->
     <ul class="post-list">
       <li v-for="post in displayedPosts" :key="post.id" class="post-card">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-        <router-link :to="`/blog/${post.slug}`">Read More</router-link>
+        <router-link :to="`/blog/${post.slug}`">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.content }}</p>
+        </router-link>
       </li>
     </ul>
 
@@ -175,6 +176,17 @@ export default {
   cursor: not-allowed;
 }
 
+.post-card a,
+.post-card a:visited {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Text color should inherit from the parent element */
+}
+
+.post-card h2,
+.post-card p {
+  margin: 0; /* Adjust spacing as needed */
+}
+
 @media (max-width: 1000px) {
   .blog-list {
     width: 100%;
@@ -186,7 +198,7 @@ export default {
     margin: 2px 0;
     width: 600px;
     transition: background-color 0.3s ease; /* Smooth transition for background color */
-    text-align: left;
+    /* text-align: left; */
   }
 }
 </style>
