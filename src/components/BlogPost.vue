@@ -2,12 +2,13 @@
   <div class="blog-post">
     <router-link to="/blog" class="back-button">←Back</router-link>
     <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
+    <div v-html="formattedContent"></div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import MarkdownIt from "markdown-it";
 
 export default {
   name: "BlogPost",
@@ -27,6 +28,13 @@ export default {
     } catch (error) {
       console.log(error);
     }
+  },
+
+  computed: {
+    formattedContent() {
+      const md = new MarkdownIt();
+      return md.render(this.post.content || "");
+    },
   },
 };
 </script>

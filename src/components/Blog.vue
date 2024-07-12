@@ -198,7 +198,6 @@ export default {
     margin: 2px 0;
     width: 600px;
     transition: background-color 0.3s ease; /* Smooth transition for background color */
-    /* text-align: left; */
   }
 }
 </style>
